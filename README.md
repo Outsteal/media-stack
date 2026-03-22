@@ -3,7 +3,7 @@ Production Docker media server | NVIDIA 4K transcoding | IT portfolio
 # 🐳 Production Media Server Stack (4K NVIDIA Transcoding)
 **Self-hosted streaming platform serving 3+ TB media across 5 devices via Tailscale VPN**
 
-![Jellyfin Dashboard](screenshot-jellyfin.png) ![docker stats](screenshot-docker-stats.png)
+![Jellyfin Dashboard](<img width="1838" height="1061" alt="image" src="https://github.com/user-attachments/assets/bb19a8f3-7f2d-465c-90af-763802b01b7a" />) ![Docker Stats](<img width="500" height="113" alt="image" src="https://github.com/user-attachments/assets/e748adb9-05d5-4a34-8128-6351420c26dd" />)
 
 ## What It Does
 - **Jellyfin**: 4K transcoding with NVIDIA GPU acceleration (handles 10+ streams)
@@ -22,7 +22,7 @@ services:
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
       - NVIDIA_DRIVER_CAPABILITIES=compute,utility,video,graphics
-      - PUID=1000                       # ← Linux permissions mastery
+      - PUID=1000                       # ← Linux permissions
       - PGID=1000
     ports: ["8096:8096"]
     volumes:
